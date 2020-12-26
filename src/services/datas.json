@@ -1,0 +1,123 @@
+
+   [
+    {"id":"c1498372-2892-4739-9bcf-9623b8ab2cdb",
+      "type":"productListingObjects",
+      "attributes":{
+        "name":"Asus Laptop",
+        "description":"CPU 8 Core\r\nRAM 16Gb",
+        "itemType":"stockedProduct",
+        "barcode":"123123123123",
+        "categoryId":"5d60fb4b-5746-432a-8039-314e639cd996",
+        "price": 15000,
+        "customFields":{
+          "custom1":"",
+          "custom2":"",
+          "custom3":"",
+          "custom4":"",
+          "custom5":"",
+          "custom6":"",
+          "custom7":"",
+          "custom8":"",
+          "custom9":"",
+          "custom10":""
+        },
+        "isActive":true,
+        "height":null,
+        "length":null,
+        "width":null,
+        "weight":null,
+        "standardUomName":"",
+        "categoryName":"Komputerlar",
+        "totalQuantityOnHand":"15.00000"
+      },
+      "relationships":
+      {"defaultPrice":
+      {"data":
+      {"id":"1d3f10bb-4aff-4a64-b1a6-c717cb8fc7d9",
+        "type":"productPrices"
+      },
+        "meta":null
+      },
+        "defaultImage":
+        {"data":
+        {"id":"72ec8907-8a6d-41fb-93d9-6aa038d4955a",
+          "type":"images"},
+          "meta":null},
+        "productCost":{
+          "data":{
+            "id":"c1498372-2892-4739-9bcf-9623b8ab2cdb",
+            "type":"productCosts"},
+          "meta":null}},
+      "meta":null},
+    {
+      "id":"cb6ed596-c669-4e23-be81-52956bd5ab94",
+      "type":"productListingObjects",
+
+      "attributes":{
+        "name":"Sichqoncha",
+        "description":"",
+        "itemType":"stockedProduct",
+        "barcode":"12312312",
+        "categoryId":"5d60fb4b-5746-432a-8039-314e639cd996",
+        "price": 20000,
+        "customFields":
+        {"custom1":"",
+          "custom2":"","custom3":"","custom4":"","custom5":"","custom6":"","custom7":"","custom8":"","custom9":"","custom10":""},
+        "isActive":true,
+        "height":null,
+        "length":null,
+        "width":null,
+        "weight":null,
+        "standardUomName":"",
+        "categoryName":"Komputerlar",
+        "totalQuantityOnHand":"12316.00000"},
+      "relationships":{"defaultPrice":
+      {"data":{
+        "id":"2a6bc46c-82bf-4004-8ad8-aec6ee53f03a",
+        "type":"productPrices"},
+        "meta":null},
+        "defaultImage":{
+          "data":{
+            "id":"289db8ed-098f-4102-ac2b-3a0cb56b46e8",
+            "type":"images"},
+          "meta":null},
+        "productCost":{
+          "data":{
+            "id":"cb6ed596-c669-4e23-be81-52956bd5ab94",
+            "type":"productCosts"},
+          "meta":null}},
+      "meta":null},{
+      "id":"ea0f4f22-7406-403c-bc83-6322af2b52e2",
+      "type":"productListingObjects",
+      "attributes":{
+        "name":"Ziffler Monitoir",
+        "description":"",
+        "itemType":"stockedProduct",
+        "barcode":"",
+        "categoryId":"e9258da2-8b84-4a75-b38b-4cf5129fc755",
+        "price": 30000,
+        "customFields":{
+          "custom1":"","custom2":"","custom3":"","custom4":"","custom5":"","custom6":"","custom7":"","custom8":"","custom9":"","custom10":""},
+        "isActive":true,
+        "height":null,
+        "length":null,
+        "width":null,
+        "weight":null,
+        "standardUomName":"",
+        "categoryName":"Monitorlar",
+        "totalQuantityOnHand":"16.00000"},
+      "relationships":{
+        "defaultPrice":{
+          "data":{
+            "id":"afd2476d-0875-4c5d-a507-d1c0c962d962",
+            "type":"productPrices"},
+          "meta":null},
+        "productCost":
+        {"data":
+        {
+          "id":"ea0f4f22-7406-403c-bc83-6322af2b52e2",
+          "type":"productCosts"},"meta":null}},"meta":null}]
+
+
+
+

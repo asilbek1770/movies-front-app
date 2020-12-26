@@ -4,7 +4,6 @@
     <Header />
     <transition name="route" mode="out-in">
       <router-view>
-
       </router-view>
     </transition>
 
