@@ -1,8 +1,19 @@
-<template>
-  <div class="p-2 mt-5">
-
+<template >
+  <div class="mx-2">
+    <v-card style="border-radius: 0; box-shadow: 0 0 0"
+            class="mt-4 border-right border-left">
+      <v-card-title class="pt-0 mt-0">
+        <v-text-field
+            v-model="search"
+            append-icon="mdi-magnify"
+            label="Search"
+            single-line
+            hide-details
+        ></v-text-field>
+      </v-card-title>
+    </v-card>
     <v-simple-table dark>
-      <template v-slot:default>
+      <template v-slot:default class="p-1 ">
         <thead class="bg-secondary">
         <tr>
           <th class="text-left" :key="title.value" v-for="title in titles">{{title.text}}</th>
@@ -13,6 +24,7 @@
             v-for="item in body"
             :key="item.id"
             @click="click(item)"
+            class="tbody"
         >
           <td>{{ item.attributes.name }}</td>
           <td>{{ item.attributes.itemType }}</td>
@@ -34,6 +46,7 @@ import data from "../services/datas.json"
 export default {
   name: "ProductList",
   data() {
+    console.log(this.search)
     return{
         titles:
           [
@@ -50,18 +63,27 @@ export default {
             { text: 'Normal Price', value: 'normal price' },
         ],
         body: data,
+        search: '',
     }
   },
 
   methods: {
       click(item){
         alert(item.attributes.name)
-      }
+      },
+
   }
 
 }
 </script>
 
 <style scoped>
+.tbody{
+  transition: 0.5s;
+}
+.tbody:hover{
+  transform: scale(1.01);
+  cursor: pointer;
 
+}
 </style>
