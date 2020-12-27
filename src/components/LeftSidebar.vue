@@ -4,14 +4,7 @@
 
 <script>
 export default {
-  name: "LeftSidebar",
-  data(){
-    return{
-
-      right: null,
-
-    }
-  }
+  name: "LeftSidebar"
 }
 </script>
 

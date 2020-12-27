@@ -1,9 +1,10 @@
 <template >
-  <div class="mx-2">
+  <div class="ml-2 mr-5">
     <v-card style="border-radius: 0; box-shadow: 0 0 0"
-            class="mt-4 border-right border-left">
+            class="mt-4">
       <v-card-title class="pt-0 mt-0">
         <v-text-field
+            class="border-top"
             v-model="search"
             append-icon="mdi-magnify"
             label="Search"
@@ -12,7 +13,7 @@
         ></v-text-field>
       </v-card-title>
     </v-card>
-    <v-simple-table dark>
+    <v-simple-table dark >
       <template v-slot:default class="p-1 ">
         <thead class="bg-secondary">
         <tr>
@@ -25,6 +26,7 @@
             :key="item.id"
             @click="click(item)"
             class="tbody"
+            :style="item.id === selectedItem.id ? 'background-color: darkslategrey' : ''"
         >
           <td>{{ item.attributes.name }}</td>
           <td>{{ item.attributes.itemType }}</td>
@@ -36,17 +38,20 @@
         </tbody>
       </template>
     </v-simple-table>
+    <RightSidebar
+            :itemprop="selectedItem"
+    />
 
   </div>
-
 </template>
 
 <script>
+import RightSidebar from "@/components/RightSidebar";
 import data from "../services/datas.json"
 export default {
   name: "ProductList",
+  components: {RightSidebar},
   data() {
-    console.log(this.search)
     return{
         titles:
           [
@@ -64,14 +69,20 @@ export default {
         ],
         body: data,
         search: '',
+        selectedItem: {}
     }
   },
 
   methods: {
-      click(item){
-        alert(item.attributes.name)
-      },
+        async click(item){
+          this.selectedItem = item;
 
+          if( item === this.selectedItem ){
+            item.attributes.isActive = true
+          }else{
+            item.attributes.isActive = false
+          }
+        }
   }
 
 }
@@ -84,6 +95,6 @@ export default {
 .tbody:hover{
   transform: scale(1.01);
   cursor: pointer;
-
+  background-color: darkslategrey!important;
 }
 </style>

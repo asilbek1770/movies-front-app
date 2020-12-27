@@ -6,13 +6,14 @@
           dense
           dark
       >
-        <v-app-bar-nav-icon  @click.stop="drawer = !drawer" >
+        <v-app-bar-nav-icon  @click="drawer = true" >
         </v-app-bar-nav-icon>
-        <router-link to="/home">
+        <router-link to="/">
           <v-toolbar-title class="home px-2">Home</v-toolbar-title>
         </router-link>
         <v-spacer></v-spacer>
       </v-app-bar>
+
       <v-navigation-drawer
           class="mt-5"
           v-model="drawer"
@@ -46,11 +47,13 @@
             v-for="list in lists"
             :key="list.title"
             class="bg-white"
+
         >
           <v-list dense class="list py-0" >
             <v-list-item-group
             >
               <v-list-item
+                  @click="drawer = false"
               >
                 <v-list-item-content>
                   <v-list-item-title  class="pl-5 ml-1">{{ list.title }}</v-list-item-title>
@@ -78,8 +81,7 @@ export default {
         { title: 'Inventory', icon: 'mdi-view-dashboard' },
       ],
       lists: [
-        {title: 'Product List', icon: 'chevron-right',link: "/product-list",exact: 'exact'},
-        {title: 'Product Add', icon: 'plus',link: "",exact: ''},
+        {title: 'Product List', icon: 'chevron-right',link: "/product-list"},
       ],
      drawer: false,
     }
@@ -100,13 +102,14 @@ name: "Header"
   margin-right: 10px;
 }
 .home{
-  color: lightgrey;
+  background-color: black;
+  color: white;
   transition: 0.5s;
 }
 .home:hover{
   list-style: none;
   text-decoration: none;
-  background-color: lightgrey;
+  background-color: white;
   border-radius: 2px;
   color: black;
 
@@ -120,8 +123,5 @@ name: "Header"
 .delete-icon:hover{
   font-size: 30px;
   cursor: pointer;
-}
-.router-link-active{
-  background-color: white!important;
 }
 </style>

@@ -21,7 +21,7 @@
           "custom9":"",
           "custom10":""
         },
-        "isActive":true,
+        "isActive":false,
         "height":null,
         "length":null,
         "width":null,
@@ -63,7 +63,7 @@
         "customFields":
         {"custom1":"",
           "custom2":"","custom3":"","custom4":"","custom5":"","custom6":"","custom7":"","custom8":"","custom9":"","custom10":""},
-        "isActive":true,
+        "isActive":false,
         "height":null,
         "length":null,
         "width":null,
@@ -98,7 +98,7 @@
         "price": 30000,
         "customFields":{
           "custom1":"","custom2":"","custom3":"","custom4":"","custom5":"","custom6":"","custom7":"","custom8":"","custom9":"","custom10":""},
-        "isActive":true,
+        "isActive":false,
         "height":null,
         "length":null,
         "width":null,

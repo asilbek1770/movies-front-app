@@ -9,6 +9,6 @@ Vue.use(VueRouter)
 export default new VueRouter({
     routes: [
         { path: '/product-list', component : ProductList},
-        { path: '/home', component : Home},
+        { path: '/', component : Home},
     ]
 })
