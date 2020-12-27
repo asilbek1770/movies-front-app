@@ -32,7 +32,7 @@
        <b-form
            class="bg-secondary py-2"
            style="opacity: 0.6">
-         <b-form-input :value="itemprop.attributes.name"
+         <b-form-input value="item"
                        class="mx-5 w-75 bg-light "
                        style="height: 33px"
          >
